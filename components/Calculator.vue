@@ -10,11 +10,7 @@
             <tbody>
                 <tr>
                     <td><strong>Dose</strong></td>
-                    <td>{{ dose }}</td>
-                </tr>
-                <tr>
-                    <td><strong>Total Pour</strong></td>
-                    <td>{{ total_pour }} g</td>
+                    <td>{{ dose }} g</td>
                 </tr>
                 <tr>
                     <td><strong>Bloom</strong></td>
@@ -23,6 +19,10 @@
                 <tr>
                     <td><strong>First Pour</strong></td>
                     <td>{{ first_pour }} g</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Pour</strong></td>
+                    <td>{{ total_pour }} g</td>
                 </tr>
             </tbody>
         </v-table>
@@ -34,7 +34,7 @@ export default {
     data() {
         return {
             ounces: 0,
-            preselections: [8, 16, 32, 64]
+            preselections: [12, 16, 25, 30]
         }
     },
     computed: {
