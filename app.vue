@@ -10,3 +10,9 @@
     </v-container>
   </div>
 </template>
+
+<script setup>
+const { $startWakeLock } = useNuxtApp()
+
+$startWakeLock()
+</script>
