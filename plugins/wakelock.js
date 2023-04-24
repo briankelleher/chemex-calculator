@@ -5,7 +5,7 @@ export default defineNuxtPlugin(nuxtApp => {
             startWakeLock: async () => {
                 if ( 'wakeLock' in navigator ) {
                     try {
-                        if ( nuxtApp.wakelock !== null ) {
+                        if ( nuxtApp.wakelock === null ) {
                             nuxtApp.wakelock = await navigator.wakeLock.request('screen')
                         }
                     } catch(err) {
